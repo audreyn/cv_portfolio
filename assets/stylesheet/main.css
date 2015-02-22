@@ -1,70 +1,144 @@
 body {
-	background-color: #f0e6e4;
-	font-family: 'Source Sans Pro', sans-serif;
-} 
-h1 {
-	margin-top: 10px;
-	margin-bottom: 10px;
+    background: #f0e6e4;
+    font-family: 'Source Sans Pro', sans-serif;
 }
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 h3, h4 {
     margin-top: 0;
     margin-bottom: 10px;
 }
+
 #banner {
-	background-color: #877777;
-	border-bottom: 5px solid #c0a9a9;
-	border-top: 5px solid #c0a9a9;
-	padding: 15px 0 15px 0;
+    background-color: #877777;
+    border-bottom: 5px solid #c0a9a9;
+    border-top: 5px solid #c0a9a9;
+    padding: 15px 0 15px 0;
 }
+
 .user-presentation {
-	color: #f0e6e4;
+    color: #f0e6e4;
     margin-left: 20px;
 }
 
-.user-presentation h1{
+.user-presentation h1 {
     color: #c0a9a9;
 }
-.bloc { 
-  width:auto;
-  border:1px solid #c0a9a9;
-  display:inline-block;
-  vertical-align:top;
-  text-align:left;
+
+.bloc {
+    width: auto;
+    border: 1px solid #c0a9a9;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
 }
+
 .rightBloc {
-	margin-left: 50%;
-	padding-left: 20px;
-	background-color: pink;
+    margin-left: 50%;
+    padding-left: 20px;
+    background-color: pink;
 }
-.small-circle { 
-  width: 40px;
-  height: 40px;
-  background: #c0a9a9;
-  font-size:20px;
-  color:#f0e6e4;
-  line-height:40px;
-  text-align:center;
-  -moz-border-radius: 20px; 
-  -webkit-border-radius: 20px; 
-  border-radius: 20px;
+
+.small-circle {
+    width: 40px;
+    height: 40px;
+    background: #c0a9a9;
+    font-size: 20px;
+    color: #f0e6e4;
+    line-height: 40px;
+    text-align: center;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
 }
+
 .circle {
-   width: 140px;
-   height: 140px;
-   background: blue; 
-   -moz-border-radius: 70px; 
-   -webkit-border-radius: 70px; 
-   border-radius: 70px;
+    width: 120px;
+    height: 120px;
+    display: table-cell;
+    vertical-align: middle;
+    background: #877777;
+    color: #f0e6e4;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+    border: 5px solid #c0a9a9;
+    text-align: center;
 }
 
 .social-networks a {
     display: inline-block;
+    margin-top: 10px;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    padding-top: 10px;
+}
+
+#menu ul a {
+    text-decoration: none;
+    color: #f0e6e4;
+}
+
+#menu, .page-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#menu .active .circle {
+    background: #c0a9a9;
+    color: #f0e6e4;
+    border: 5px solid #877777;
+}
+
+
+.page-content {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+
+.page-content h1, .page-content h2 {
+    color: #877777;
+}
+
+.job strong, .study strong {
+    color: #af7b7b;
+}
+
+.jobs, .trainings {
+     list-style-type: none;
+     line-height: 35px;
+ }
+
+.studies {
+    list-style-type: none;
+    line-height: 15px;
+    margin-bottom: 50px;
+}
+
+.job, .study {
+    margin-top: 30px;
+}
+.job-period, .study-period {
+    font-size: 1.2em;
+    color: #af7b7b;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 951px) {
     h1 {
         margin-top: 0;
     }
+
     #banner {
         display: table;
         width: 100%;
@@ -90,15 +164,17 @@ h3, h4 {
     }
 
 }
+
 @media screen and (min-width: 621px) and (max-width: 950px) {
     h1 {
         margin-top: 0;
     }
+
     #banner {
         display: table;
         width: 100%;
     }
-    
+
     .social-networks, .user-presentation {
         display: table-cell;
         vertical-align: middle;
@@ -129,12 +205,14 @@ h3, h4 {
         margin-top: 5px;
     }
 }
+
 @media screen and (max-width: 320px) {
     h1 {
         margin-top: 5px;
         margin-bottom: 5px;
         font-size: 1em;
     }
+
     h3, h4 {
         margin-top: 0;
         margin-bottom: 5px;
@@ -160,8 +238,8 @@ h3, h4 {
     .small-circle {
         width: 30px;
         height: 30px;
-        font-size:13px;
-        line-height:30px;
+        font-size: 13px;
+        line-height: 30px;
         -moz-border-radius: 25px;
         -webkit-border-radius: 25px;
         border-radius: 25px;

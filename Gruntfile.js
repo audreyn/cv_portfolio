@@ -29,12 +29,12 @@ module.exports = function (grunt) {
         partials: './src/siteArchitecture/partials/**/*.hbs',
         assets: '../audreyn.github.io/assets'
       },
-      posts: {
+      site: {
         files: [{
           cwd: './src/content/',
           dest: '../audreyn.github.io',
           expand: true,
-          src: ['**/*.hbs', '!pages/**/*.hbs']
+          src: ['index.hbs', '!pages/**/*.hbs']
         }, {
           cwd: './src/content/pages/',
           dest: '../audreyn.github.io',

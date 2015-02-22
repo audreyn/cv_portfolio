@@ -1,0 +1,9 @@
+<div id="menu">
+    <ul>
+        {{#withSort pages "data.order" dir="asc"}}
+            {{#is data.menu "true"}}
+                <li {{#is ../../page.dest this.dest}} class="active"{{/is}} ><a  href ="{{relative  .. /page.dest this.dest }} "> <div class="circle"> {{data.title }}</div> </a > </li >
+            {{/is}}
+        {{/withSort}}
+    </ul>
+</div>
