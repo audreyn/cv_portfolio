@@ -1,0 +1,43 @@
+---
+title: "Skimbo"
+longTitle: "Aggrégateur de réseaux sociaux"
+date: "Octobre 2012 à Novembre 2013"
+menu: "false"
+menuActive: "personnalsProject"
+urlSite: "http://froggies.github.io/Skimbo/"
+order: 16
+tags:
+- AngularJs
+- Grunt
+- Bower
+- Titanium
+categories:
+- project
+---
+
+<article class="project-detail">
+    <div class="project-detail-date">{{date}}</div>
+    <hr />
+    <div class="project-detail-content">
+        <div class="project-detail-image">
+            <img src="./assets/images/skimbo.png"/>
+        </div>
+        <div class="project-detail-text">
+            <p> Participation, au sein d’une équipe, à la création d’un agrégateur de réseaux sociaux : Skimbo.
+                Cette application permet au sein d’une même page de suivre tous ces réseaux sociaux, organisés en colonnes, créées par l’utilisateur.
+                Ce projet a été initié lors de notre participation au TypeSafe Contest.</p>
+            <p>Cette application a été réalisée en <strong>AngularJS, HTML5, CSS3</strong> côté client et Scala, PlayFramework et MongoDB côté serveur.
+                J’ai participé aux réflexions et au développement côté client, ainsi qu’à la mise en place d’outils de développements tels que <strong>Bower</strong> et <strong>Grunt</strong>.
+                Dans le but de découvrir <strong>Titanium</strong>, j’ai initié le développement de l’application mobile Skimbo. </p>
+            <p>Nous avons soutenu ce projet lors d’un <strong>Startup Weekend</strong>. </p>
+            <p class="en-savoir-plus"><a href="{{urlSite}}" target="_blank">En savoir plus</a></p>
+            <p class="other-projects"><a href="personalsProjects.html">Autres projets</a></p>
+        </div>
+
+    </div>
+    <ul class="tags">
+        {{#page.tags}}
+        <li class="tag">{{.}}</li>
+        {{/page.tags}}
+    </ul>
+</article>

@@ -2,7 +2,17 @@
     <ul>
         {{#withSort pages "data.order" dir="asc"}}
             {{#is data.menu "true"}}
-                <li {{#is ../../page.dest this.dest}} class="active"{{/is}} ><a  href ="{{relative ../../page.dest this.dest}}"> <div class="circle"> {{data.title }}</div> </a > </li >
+                <li {{#is ../../page.dest this.dest}} class="active"{{/is}} >
+                    <a  href ="{{relative ../../page.dest this.dest}}">
+                        <div {{#isnt data.title "home"}} class="circle"{{/isnt}}>
+                            {{#is data.title "home"}}
+                                <img src="./assets/images/audrey.png" />
+                            {{else}}
+                                {{data.title }}
+                            {{/is}}
+                        </div>
+                    </a >
+                </li >
             {{/is}}
         {{/withSort}}
     </ul>

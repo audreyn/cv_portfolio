@@ -1,0 +1,35 @@
+---
+title: "Portfolio"
+longTitle: "Création du site présentant ma formation, et mes emplois, ainsi que mes projets personnels"
+date: "2015"
+menu: "false"
+menuActive: "personnalsProject"
+urlSite: "http://audreyn.github.io"
+order: 20
+tags:
+- Assemble
+- Responsive
+categories:
+- project
+---
+
+<article class="project-detail">
+    <div class="project-detail-date">{{date}}</div>
+    <hr />
+    <div class="project-detail-content">
+        <div class="project-detail-image">
+        </div>
+        <div class="project-detail-text">
+            <p>Création d’un portfolio responsive en Assemble. Ce portfolio présente ma formation, mes emplois,
+                et les projets personnels que j'ai réalisé ou auxquels j'ai participé. </p>
+            <p class="en-savoir-plus"><a href="{{urlSite}}" target="_blank">En savoir plus</a></p>
+            <p class="other-projects"><a href="personalsProjects.html">Autres projets</a></p>
+        </div>
+
+    </div>
+    <ul class="tags">
+        {{#page.tags}}
+        <li class="tag">{{.}}</li>
+        {{/page.tags}}
+    </ul>
+</article>

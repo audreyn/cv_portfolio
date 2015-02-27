@@ -1,0 +1,38 @@
+---
+title: "Blog personnel"
+longTitle: "Création d’un blog personnel"
+date: "Décembre 2014 à aujourd'hui"
+menu: "false"
+menuActive: "personnalsProject"
+urlSite: ""
+order: 19
+tags:
+- AngularJs
+- NodeJs
+- Tests unitaires
+- Express
+- MongoDb
+- Gulp
+categories:
+- project
+---
+
+<article class="project-detail">
+    <div class="project-detail-date">{{date}}</div>
+    <hr />
+    <div class="project-detail-content">
+        <div class="project-detail-image">
+        </div>
+        <div class="project-detail-text">
+            <p>Création d’un blog personnel, développé en AngularJs, NodeJs, Express, MongoDb (pas encore en ligne).
+                Mise en place de tests unitaires, d’outils de développements tels que Gulp. </p>
+            <p class="other-projects"><a href="personalsProjects.html">Autres projets</a></p>
+        </div>
+
+    </div>
+    <ul class="tags">
+        {{#page.tags}}
+        <li class="tag">{{.}}</li>
+        {{/page.tags}}
+    </ul>
+</article>

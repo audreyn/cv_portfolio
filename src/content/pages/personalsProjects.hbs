@@ -1,9 +1,27 @@
 ---
 title: "Projets personnels"
-posted: 2014-01-28
-modifier: alert-warning
-strong: Be advised!
-message: this is an alert from
 menu: "true"
 order: 3
 ---
+
+<section class="personnals-projects">
+    {{#each categories}}
+    {{#is category 'project'}}
+    {{#withSort pages "data.order" dir="desc"}}
+    <article class="project">
+        <div class="project-header">
+            <h2><a href ="{{relative ../../page.dest this.dest}}" class="project-title">{{data.title}}</a></h2>
+            <div class="project-date">{{data.date}}</div>
+        </div>
+        <div class="project-description">{{{data.longTitle}}}</div>
+        <ul class="tags">
+            {{#each data.tags}}
+            <li class="tag">{{.}}</li>
+            {{/each}}
+        </ul>
+    </article>
+    {{/withSort}}
+    {{/is}}
+    {{/each}}
+</section>
+
