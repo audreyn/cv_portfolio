@@ -58,8 +58,8 @@ h3, h4 {
 }
 
 .circle {
-    width: 120px;
-    height: 120px;
+    width: 105px;
+    height: 105px;
     display: table-cell;
     vertical-align: middle;
     background: #FDCBB1;
@@ -86,6 +86,8 @@ h3, h4 {
 
 #menu ul li img {
     border-radius: 50%;
+    width: 120px;
+    height: auto;
 }
 
 
@@ -105,15 +107,6 @@ h3, h4 {
     color: #4A536B;
     border: 5px solid #E8A0A2;
 }
-
-#menu ul li:first-child > a:hover div {
-    border: 3px solid #E8A0A2;
-    border-radius: 50%;
-    height: 140px;
-}
-
-
-
 
 .page-content {
     margin-left: 70px;
@@ -282,6 +275,15 @@ footer {
         width: 100%;
     }
 
+    #menu label,
+    #menu input {
+        display: none;
+    }
+
+    .menu-container {
+        display: inline-block;
+    }
+
     .social-networks, .user-presentation {
         display: table-cell;
         vertical-align: middle;
@@ -306,15 +308,28 @@ footer {
     }
 }
 
-@media screen and (min-width: 621px) and (max-width: 1100px) {
+@media screen and (min-width: 705px) and (max-width: 1100px) {
     h1,
     .page-content {
         margin-top: 0;
     }
 
+    .page-content {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
     #banner {
         display: table;
         width: 100%;
+    }
+
+    .project-detail-image img {
+        width: 100%;
+    }
+
+    .menu-container {
+        text-align: center;
     }
 
     .social-networks, .user-presentation {
@@ -336,8 +351,14 @@ footer {
         margin-right: 35px;
     }
 
+    #menu label,
+    #menu input {
+        display: none;
+    }
+
     #menu ul li {
         display: inline;
+        margin-right: 10px;
     }
 
     #menu ul li a,
@@ -347,18 +368,93 @@ footer {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 620px) {
+@media screen and (min-width: 451px) and (max-width: 705px) {
     .social-networks a:first-of-type {
         margin-left: 20px;
     }
 
     .social-networks a {
-        margin-right: 30px;
+        margin-right: 20px;
         margin-top: 5px;
+    }
+
+    .page-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0;
+    }
+
+    .project-detail-image img {
+        width: 100%;
+    }
+
+    .menu-container,
+    #menu {
+        width: 100%;
+    }
+
+    #menu ul,
+    #menu ul li {
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu ul li:first-child img {
+        display: none;
+    }
+
+    #menu ul li:first-child div:after {
+        content: "Accueil"
+    }
+
+    #menu ul li
+    {
+        border-bottom: 1px solid #FDCBB1;
+    }
+
+    #menu label {
+        position: absolute;
+        top: 156px;
+        right: 30px;
+    }
+
+    #menu > input:not(:checked) ~ ul {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    #menu > input:checked ~ ul {
+        max-height: 25em;
+    }
+
+    #menu > input {
+        display: none;
+    }
+
+    #menu ul li div {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        vertical-align: middle;
+        text-align: center;
+        background: #4A536B;
+        color: #FDCBB1;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        border: none;
+    }
+
+    #menu .active .circle,
+    #menu ul a:hover .circle {
+        background: #4A536B;
+        color: #FDCBB1;
+        border: none;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
     h1 {
         margin-top: 5px;
         margin-bottom: 5px;
@@ -376,6 +472,25 @@ footer {
 
     h4 {
         font-size: 0.6em;
+    }
+
+    .page-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0;
+    }
+
+    .page-content > div {
+        font-size: 0.7em;
+    }
+
+    .project-detail-image img {
+        width: 100%;
+    }
+
+    .project-detail-text,
+    .project-detail-image {
+        display: block;
     }
 
     .social-networks a {
@@ -397,4 +512,68 @@ footer {
         border-radius: 25px;
     }
 
+    .menu-container,
+    #menu {
+        width: 100%;
+    }
+
+    #menu ul,
+    #menu ul li {
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu ul li:first-child img {
+        display: none;
+    }
+
+    #menu ul li:first-child div:after {
+        content: "Accueil"
+    }
+
+    #menu ul li
+    {
+        border-bottom: 1px solid #FDCBB1;
+    }
+
+    #menu label {
+        position: absolute;
+        top: 99px;
+        right: 14px;
+    }
+
+    #menu > input:not(:checked) ~ ul {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    #menu > input:checked ~ ul {
+        max-height: 25em;
+    }
+
+    #menu > input {
+        display: none;
+    }
+
+    #menu ul li div {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        vertical-align: middle;
+        text-align: center;
+        background: #4A536B;
+        color: #FDCBB1;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        border: none;
+    }
+
+    #menu .active .circle,
+    #menu ul a:hover .circle {
+        background: #4A536B;
+        color: #FDCBB1;
+        border: none;
+    }
 }

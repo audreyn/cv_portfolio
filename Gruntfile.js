@@ -34,10 +34,15 @@ module.exports = function (grunt) {
           cwd: './src/content/',
           dest: '../audreyn.github.io',
           expand: true,
-          src: ['index.hbs', '!pages/**/*.hbs']
+          src: ['index.hbs', '!pages/**/*.hbs', '!projects/**/*.hbs']
         }, {
           cwd: './src/content/pages/',
           dest: '../audreyn.github.io',
+          expand: true,
+          src: '**/*.hbs'
+        },{
+          cwd: './src/content/projects/',
+          dest: '../audreyn.github.io/project',
           expand: true,
           src: '**/*.hbs'
         }]
