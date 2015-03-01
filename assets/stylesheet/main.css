@@ -129,9 +129,11 @@ hr {
 
 .job strong,
 .study strong,
-.more-info strong
+.more-info strong,
 .project-detail strong,
-.personnals-projects strong{
+.personnals-projects strong,
+.home-page strong,
+a {
     color: #C2768E;
 }
 

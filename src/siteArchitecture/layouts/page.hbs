@@ -2,7 +2,14 @@
 <div id="mainContent">
     {{>site-menu}}
     <div class="page-content">
-        <h1>{{ this.page.title }}</h1>
+        <h1>
+            {{#isnt this.page.title "home" }}
+                {{ this.page.title }}
+            {{else}}
+                Bienvenue
+            {{/isnt}}
+        </h1>
+
         {{#markdown}}
         {{> body}}
         {{/markdown}}

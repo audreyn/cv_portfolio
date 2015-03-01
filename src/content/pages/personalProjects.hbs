@@ -14,11 +14,11 @@ order: 3
             <div class="project-date">{{data.date}}</div>
         </div>
         <div class="project-description">{{{data.longTitle}}}</div>
-        <ul class="tags">
-            {{#each data.tags}}
-            <li class="tag">{{.}}</li>
-            {{/each}}
-        </ul>
+            <ul class="tags">
+                {{#each data.tags}}
+                <li class="tag">{{.}}</li>
+                {{/each}}
+            </ul>
     </article>
     {{/withSort}}
     {{/is}}

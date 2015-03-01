@@ -5,4 +5,20 @@ menu: "true"
 order: 0
 ---
 
-Site en construction
+<div class="home-page">
+    <p>Bienvenue sur mon site personnel, vous trouverez ici mes <a href="jobs.html">emplois</a>, <a href="studies.html">ma formation</a>, ainsi que <a href="personalProjects.html">mes projets personnels</a>.</p>
+    <p>Vous pouvez également télécharger <a href="https://github.com/audreyn/audreyn.github.io/raw/master/assets/NOVAK%20Audrey.pdf">mon cv</a> en pdf, ou me <a href="mailto:novak.audrey@gmail.com">contacter</a> si vous avez des questions.</p>
+    <p>Je suis développeuse front-end (<strong>Javascript</strong>, <strong>Angularjs</strong>), je suis passionée par les nouvelles technologies, et j'ai sans cesse envie d'apprendre de nouvelles choses.</p>
+    <p>N'hésitez pas à parcourir mon site pour en savoir plus, ainsi qu'à me suivre sur <a href="https://twitter.com/udr3y">Twitter</a> <i class="fa fa-smile-o fa-lg"></i> </p>
+
+    <hr/>
+    <ul class="tags">
+        {{#each tags}}
+            {{#isnt tag "Python"}}
+                <li class="tag">{{tag}}</li>
+            {{/isnt}}
+        {{/each}}
+    </ul>
+
+
+</div>
